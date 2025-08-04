@@ -44,9 +44,6 @@ app.get('/api/hello', (req, res) => {
   }
 });
 
-// Handle preflight requests
-app.options('*', cors());
-
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error('Server error:', err);
